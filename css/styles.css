@@ -60,7 +60,7 @@ input {
     -o-border-radius: 36px;
     height: 40px;
     font-family: "AraHamahZanki";
-    color: #42636b;
+    color: var(--primary-color);
 }
 
 input::placeholder {
@@ -371,15 +371,17 @@ ul.submenu li a {
         z-index: 9;
     }
 
-    .navbar nav .menu.active {
-        display: flex;
-        opacity: 1;
-        transform: translateY(0);
-    }
+  
 
     /* Style for menu items on mobile */
     .navbar nav .menu li {
         margin: 15px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar nav .menu li .btn {
+        margin: auto;
     }
 
     .navbar nav .menu li a {
@@ -387,7 +389,12 @@ ul.submenu li a {
         font-family: "HelveticaNeue-bold";
         color: #FFFFFF;
     }
+
+    ul.submenu {
+        position: unset;
+    }
 }
+
 
 /* Media query for mobile screens */
 
@@ -1373,10 +1380,27 @@ footer .social-media {
         opacity: 1;
         transform: translateY(0);
     }
+    .navbar nav .menu > li{
+        margin-bottom: 10px !important;
+    }
+    ul.submenu {
+        position: unset;
+        background: transparent;
+        padding: 0;
+        margin-left: 15px;
+    }
 
-    /* Style for menu items on mobile */
-    .navbar nav .menu li {
-        margin: 15px 0;
+    ul.submenu li:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+   
+    ul.submenu li{margin-bottom: 5px;}
+
+
+    /* Show the submenu when the parent li is clicked */
+    .navbar nav .menu li.active > ul.submenu {
+        display: block;
     }
 
     .navbar nav .menu li a {
@@ -1405,6 +1429,23 @@ footer .social-media {
     .navbar nav {
         grid-template-columns: 20% 80%;
         grid-gap: 0;
+    }
+
+    /* Style for menu items on mobile */
+    .navbar nav .menu li {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar nav .menu li .btn {
+        margin: auto;
+    }
+
+    .navbar nav .menu li a {
+        font-size: 18px;
+        font-family: "HelveticaNeue-bold";
+        color: #FFFFFF;
     }
 
     .search-box {
@@ -1657,10 +1698,11 @@ footer .social-media {
     .header .grid-container .social-media ul {
         display: flex;
         justify-content: center;
+        grid-gap: 10px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .why-buruj .title {
         font-size: 40px;
         /* Adjust the font size for the title */
@@ -1696,6 +1738,7 @@ footer .social-media {
         font-size: 16px;
         padding: 115px 110px 0 180px;
     }
+
     .cards-parallelogram {
         width: max-content;
         grid-gap: 80px 40px;
@@ -1703,19 +1746,24 @@ footer .social-media {
         grid-template-columns: 1fr 1fr;
         margin: auto;
     }
+
     .cards-parallelogram .background-parallelogram {
         width: 100%;
     }
-    #owl_experience .box-prof{
+
+    #owl_experience .box-prof {
         height: 280px;
         width: 85%;
         margin: auto;
-    
+
     }
+
     .our-testimonial .grid-2col {
         grid-template-columns: 1fr 1fr;
     }
+
     .right-yellow {
-        grid-area: 2/1;;
+        grid-area: 2/1;
+        ;
     }
 }
