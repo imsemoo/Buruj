@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datetime-picker.css"> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <title>Home</title>
+</head>
+<body>
+    
+<!-- Start Navbar -->
+<div class="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Logo Buruj" width="60px;">
+                        </a>
+                    </div>
+                  
+                    <div class="line-en d-flex align-item-center">
+                         
+                        <div class=" search-box">
+                            <img src="images/search-icon.png" alt="search icon">
+                            <input type="search" name="" id="" placeholder="search buruj">
+                        </div>
+                         <!-- Mobile Menu Icon -->
+                         <div class="mobile-menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!-- Menu Items (hidden by default on mobile) -->
+                        <ul class="menu">
+                            <li>
+                                <a href="#" class="active">about</a>
+                            </li>
+                            <li>
+                                <a href="#">courses <img src="images/arrow-down.png" alt=""></a>
+                                <ul class="submenu">
+                                    <li><a href="#">course #1</a></li>
+                                    <li><a href="#">course #2</a></li>
+                                    <li><a href="#">course #3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">explore  <img src="images/arrow-down.png" alt=""></a>
+                                <ul class="submenu">
+                                    <li><a href="#">explore #1</a></li>
+                                    <li><a href="#">explore #2</a></li>
+                                    <li><a href="#">explore #3</a></li>
+                                </ul>
+                            </li>
+                            <li class="button">
+                                <a href="#" class="btn btn-login">Login\Signup</a>
+                            </li>
+                            <li class="tel-li">
+                                <a href="#"> 
+                                    <img src="images/tel-icon2.png" alt="" width="40px">  
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="images/line-nav2.png" alt="">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Navbar -->
+
+
+
+<div class="steps form-container">
+    <form id="multiStepForm">
+        <!-- Step 1 -->
+        <div class="form-step active-step" id="step-1">
+            <div class="header">
+                <h2>Welcome to your learning journey</h2>
+            </div>
+            <div class="form-area">
+                <input type="text" placeholder="Full name" name="fullName" required>
+                <img src="images/name-icon.png" alt="" class="icon-rele">
+
+            </div>
+            <div class="form-area">
+                <input type="email" placeholder="Email" name="email" required>
+                <img src="images/email-icon.png" alt="" class="icon-rele">
+
+            </div>
+            <div class="form-area">
+                <div class="phone-input-container">
+                    <select id="countryCode" class="country-code">
+                    <option value="+1">+1</option>
+                    <!-- Add more country codes here -->
+                    </select>
+                    <input type="tel" id="phone" class="phone-number" placeholder="0000-000-000" st>
+                </div>
+                <img src="images/phone-icon.png" alt="" class="icon-rele">
+
+            </div>
+            <div class="form-area">
+                <select name="country" style="background-position: 18%;" required>
+                    <option value="">Country</option>
+                    <!-- Add countries here -->
+                </select>
+                <img src="images/country-icon.png" alt="" class="icon-rele">
+
+            </div>
+            
+            <div class="form-area">
+                <input type="text" placeholder="State" name="state">
+                <img src="images/state-icon.png" alt="" class="icon-rele">
+            </div>
+            <div class="form-area">
+                <select name="source" required>
+                    <option value="">How did you hear about us?</option>
+                    <!-- Add sources here -->
+                </select>
+            </div>
+
+            <div class="buttons-container">
+                <button type="button" class="next-btn">Next</button>
+            </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="form-step" id="step-2" style="display: none;">
+            <div class="header">
+                <h2>Which course are you most interested in?</h2>
+
+            </div>
+            <div class="custom-select container-select-one">
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">Quran course</h2>
+                </div>
+                <div class=" custom-option img-rhombus">
+                    <h2 class="course">Arabic course </h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">Tajweed  course</h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">Islamic  course</h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course"> <span>All in one</span> course </h2>
+                </div>
+            </div>
+            <div class="header">
+                <h2>How many students will join?</h2>
+            </div>
+            <div class="custom-select container-select-tow">
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">1</h2>
+                </div>
+                <div class=" custom-option img-rhombus">
+                    <h2 class="course">2 </h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">3  </h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course">4  </h2>
+                </div>
+                <div class="custom-option img-rhombus">
+                    <h2 class="course"> 5  </h2>
+                </div>
+            </div>
+            <!-- Content for step 2 -->
+                <button type="button" class="prev-btn"> <img src="images/back-icon.png" alt=""> Back</button>
+                <button type="button" class="next-btn">Next</button>
+        </div>
+        <!-- Step 3 -->
+        <div class="form-step" id="step-3" style="display: none;">
+            <div class="custom-calendar">
+                <div class="header">
+                    <h2>Pick a time and date for your free evaluation lesson</h2>
+                </div>
+
+                <div class="datetime-picker container-custom-pick-date-and-time">
+                    <div class="calendar date-picker">
+                      <div class="month">
+                        <div class="date">
+                          <h2>January 2024</h2>
+                        </div>
+                        <div class="container-arrow">
+                            <span class="prev">&#10094;</span>
+                            <span class="next">&#10095;</span>
+                        </div>
+                      </div>
+                      <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="days">
+                        <!-- Days will be generated by JavaScript -->
+                      </div>
+                    </div>
+                    <div class="time-picker">
+                      <h2>pick a time</h2>
+                      <div id="timeBefore" class="time"></div>
+                      <div class="timecurrent" id="timecurrent ">
+                        <input
+                          type="number"
+                          id="hourInput"
+                          class="time-input"
+                          placeholder="HH"
+                          min="1"
+                          max="12"
+                          required
+                        />
+                        <span>:</span>
+                        <input
+                          type="number"
+                          id="minuteInput"
+                          class="time-input"
+                          placeholder="MM"
+                          min="0"
+                          max="59"
+                          required
+                        />
+                        <select id="amPmSelect">
+                          <option value="AM">a.m</option>
+                          <option value="PM">p.m</option>
+                        </select>
+                      </div>
+              
+                      <div id="timeAfter" class="time"></div>
+                    </div>
+              
+                    <div class="submit-section">
+                      <p id="selectedDateTime"></p>
+                    </div>
+                  </div>
+            </div>
+            <!-- Content for step 3 -->
+            <div class="buttons-container">
+                <button type="button" class="prev-btn"> <img src="images/back-icon.png" alt=""> Back</button>
+                <button id="submitDateTime">Submit</button>
+                <p id="selectedDateTime"></p>
+            </div>
+        </div>
+    </form>
+    <div class="step-indicator">
+        <span class="step-dot active-dot"></span>
+        <span class="step-dot "></span>
+        <span class="step-dot "></span>
+
+    </div>
+</div>
+
+<!-- Start Footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="title-footer">About Us</h4>
+                <p class="descrip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+                <p class="descrip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="title-footer">Contact</h4>
+                <div class="social-media">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/facebook-icon.png" alt="Link Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/play-icon-2.png" alt="Link Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/whatsapp.png" alt="Link whatsapp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/instagram.png" alt="Link instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4 class="title-footer">Payments</h4>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+<!-- End Footer-->
+
+
+    <script src="js/jquery-3.7.1.min.js"></script> 
+    <script src="js/fontawesome.min.js"></script> 
+    <script src="js/owl.carousel.min.js"></script> 
+    <script src="js/datetime-picker.js"></script> 
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
