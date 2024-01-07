@@ -609,6 +609,7 @@ ul.submenu li a {
 
 .why-buruj {
     padding: 50px 0;
+    position: relative;
 }
 
 .why-buruj .title {
@@ -646,7 +647,7 @@ ul.submenu li a {
 }
 
 .why-buruj .box {
-    width: 74%;
+    width: 65%;
     height: 140px;
     background: var(--secondary-color);
     border-radius: 0;
@@ -665,7 +666,6 @@ ul.submenu li a {
     top: 0;
     bottom: 0;
     left: -70px;
-    background: #fefdfe;
     -webkit-transform: skewX(-45deg);
     -ms-transform: skewX(-45deg);
     transform: skewX(-45deg);
@@ -687,10 +687,18 @@ ul.submenu li a {
 
 .why-buruj .box p {
     font-size: 20px;
-    color: #fff;
+    color: var(--primary-color) !important;
     margin-left: 25px;
     padding-bottom: 40px;
     margin-top: -12px;
+    font-weight: 600;
+    line-height: 1.4;
+
+}
+.why-buruj .box:nth-child(3) p ,
+.why-buruj .box:nth-child(5) p {
+    color: #fff !important;
+    
 }
 
 
@@ -887,29 +895,35 @@ ul.submenu li a {
     margin-bottom: 80px;
 }
 
-.cards-group {
-    max-width: 1000px;
+.our-courses .cards-group {
+    display: flex;
     margin: auto;
-    grid-gap: 20px 120px;
+    grid-gap: 50px 130px;
+    justify-content: center;
+    margin-bottom: 100px;
 }
-
-.cards-group .card {
+.our-courses .cards-group:last-child{margin-bottom: 0;}
+.our-courses  .cards-group .card {
     text-align: center;
+    max-width: 300px;
 }
 
 .card .img-rhombus {
     position: unset;
     border: 5px solid var(--secondary-color);
+    background: #f9f2e5;
 
 }
 
-.card .img-rhombus .course {
+ .img-rhombus .course {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     color: var(--primary-color);
-    font-size: 2vw;
+    font-size: 3vw;
+    width: 90%;
+    text-align: center;
 }
 
 
@@ -924,17 +938,24 @@ ul.submenu li a {
 .cards-group .card .body {
     padding: 50px 20px 20px;
 }
+.cards-group .card .body h4{
+    font-family: "AraHamahZanki";
+    color: var(--text-color);
+    font-size: 22px;
+    margin-bottom: 20px;
 
+}
 .cards-group .card .body p {
     color: #165563;
     font-family: "AraHamahZanki";
     font-size: 18px;
+    text-align: start;
 }
 
 .our-courses .btn-free {
     background: var(--secondary-color);
     width: 220px;
-
+    margin-bottom: 30px;
 }
 
 
@@ -2028,7 +2049,7 @@ footer .social-media {
 
     .search-box {
         margin-right: 10px;
-    }
+    }buruj
 
     .why-buruj .title {
         font-size: 40px;
@@ -2037,18 +2058,28 @@ footer .social-media {
 
     .why-buruj .box:nth-child(3),
     .why-buruj .box {
-        width: 100%;
+        width: 90%;
         padding: 20px;
         margin: 260px auto 0;
         text-align: center;
-    }
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: max-content;
+
+}
 
     .why-buruj .box:nth-child(5),
     .why-buruj .box {
-        width: 100%;
+        width: 90%;
         padding: 20px;
         margin: 260px auto 0;
         text-align: center;
+        border-radius: 15px;
+        height: max-content;
+
     }
 
     .our-courses {
@@ -2068,6 +2099,9 @@ footer .social-media {
 
     .why-buruj .box p {
         font-size: 16px;
+        margin: 0;
+        padding: 0;
+        text-align: start;
     }
 
     .btn-joinus {
@@ -2127,7 +2161,9 @@ footer .social-media {
     }
 
     .cards-group .card {
-        grid-gap: 20px 60px;
+        grid-gap:  40px;
+        margin: auto;
+
     }
 
     .card .img-rhombus {
@@ -2144,6 +2180,7 @@ footer .social-media {
 
     .cards-group .card .body p {
         font-size: 16px;
+        text-align: center;
     }
 
     .why-buruj .title::before {
