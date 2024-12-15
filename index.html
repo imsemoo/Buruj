@@ -12,7 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/datetime-picker.css">
 
     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
     <title>Home</title>
+    <!-- Favicon for standard browsers -->
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+    <!-- Favicon for IE -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <!-- Apple Touch Icon for iOS and Android 2.1+ devices -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 </head>
 <body>
 <!-- Start Navbar -->
@@ -116,13 +123,13 @@
                     </div>
                     <div class="content d-flex flex-column align-items-start justify-content-end">
                         <div class="text">
-                        <div class="logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="Logo Buruj" width="60px;">
-                        </a>
-                    </div>
-                            <h2 class="title">Ignite the Love of Quran </h2>
-                            <h2 class="title"><span class="yellow">In your Child's heart and brain</span></h2>
+                        <!-- <div class="logo">
+                            <a href="#">
+                                <img src="images/logo.png" alt="Logo Buruj" width="60px;">
+                            </a>
+                        </div> -->
+                            <h2 class="title title1">Ignite the Love of Quran </h2>
+                            <h2 class="title"><span class="yellow">In your Child's <br> heart and brain</span></h2>
                         <p>with tailored learning journey fitting your unique needs.</p>
                         <a href="#" class="btn">Start your journey</a>
                         <br>
@@ -143,72 +150,77 @@
 
 <div class="background-buruj">
     <div class="why-buruj">
-        
+        <div class="overlay"></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="title">Why <span class="bold-yellow">Buruj</span>?</h2>
-                    <div class="box">
-                        <!--<div class="image-parallelogram">
-                        </div>-->
-                        <div class="img-rhombus">
-                            <h4 class="course">Flexible</h4>
-
-
-                            <div class="inner-wrapper">
+                    <div class="grid-container">
+                        <div class="box">
+                            <!--<div class="image-parallelogram">
+                            </div>-->
+                            <div class="img-rhombus">
+                                <div class="inner-wrapper">
+                                    <h4 class="course">Flexible</h4>
+                                </div>
                             </div>
+                            <p>
+                               - Customized learning plan fitting your needs. <br>
+                               - One to one personalized classes. <br>
+                               - 27/7 Schedule available. <br>
+                               - Certified teachers, male & female.
+     
+                            </p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                        <p>
-                           - Customized learning plan fitting your needs. <br>
-                           - One to one personalized classes. <br>
-                           - 27/7 Schedule available. <br>
-                           - Certified teachers, male & female.
- 
-                        </p>
-                    </div>
-                    <div class="box">
-                        <div class="img-rhombus">
-                            <h4 class="course">Progress Tracking</h4>
-
-                            <div class="inner-wrapper">
-                                
+                        <div class="box">
+                            <div class="img-rhombus">
+                                <div class="inner-wrapper">
+                                    <h4 class="course">Progress Tracking</h4>
+                                </div>
                             </div>
+                      
+                            <ul class="blue-list">
+                                <li> - Full learning journey access and control.</li>
+                                <li> - Online learning platform, easy to use.</li>
+                                <li> - Daily progress report.</li>
+                                <li> - Recorded lessons.</li>
+                            </ul>
                         </div>
-                        <p>
-                            - Full learning journey access and control. <br>
-                            - Online learning platform, easy to use.<br>
-                                - Daily progress report.<br>
-                                        - Recorded lessons.
-
-                        </p>
-
-                    </div>
-                    <div class="box">
-                        <div class="img-rhombus">
-                            <h4 class="course">Lovely for kids</h4>
-
-                            <div class="inner-wrapper">
+                        <div class="box">
+                            <div class="img-rhombus">
+                                <div class="inner-wrapper">
+                                    <h4 class="course">Lovely <br> for kids</h4>
+                                </div>
                             </div>
+                            <p>
+                                - Fun learning environment.  <br>
+                                - Competition and certification.  <br>
+                                - Creative and patient teachers.
+                            </p>
+    
                         </div>
-                        <p>
-                            - Fun learning environment.  <br>
-                            - Competition and certification.  <br>
-                            - Creative and patient teachers.
-                        </p>
-
-                    </div>
-                    <div class="box">
-                        <div class="img-rhombus">
-                            <h4 class="course">Guaranteed</h4>
-                            <div class="inner-wrapper">
+                        <div class="box">
+                            <div class="img-rhombus">
+                                <div class="inner-wrapper">
+                                    <h4 class="course">Guaranteed</h4>
+                                </div>
                             </div>
+                            <ul class="blue-list">
+                                <li> - 100% Money Back Guarantee</li>
+                                <li> - Free trial Class</li>
+                                <li> - 24/7 Support</li>
+                            </ul>
+                        
+    
                         </div>
-                        <p>
-                            - 100% Money Back Guarantee <br>
-                            - Free trial Class <br>
-                            - 24/7 Support
-                        </p>
-
+                       
                     </div>
                     <a href="#" class="btn btn-joinus">
                         <span>Join Us</span>
@@ -218,6 +230,8 @@
         </div>
     </div>
     <div class="our-courses">
+        <div class="overlay"></div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -315,32 +329,45 @@
                     <div class="title-box">
                         <h1>How to start</h1>
                     </div>
-                    <div class="boxes-numb d-flex justify-content-center" >
-                        <div class="box-en" >
+                    <div class="boxes-numb " >
+                        <!-- <div class="box-en" >
                             <img src="images/one-back.png" alt="">
-                            <h4 class="title">Lorem ipsum </h4>
-                            <p>Fill the evaluation class form “link” with no payments required. </p>
+                            <h4 class="title">Form </h4>
+                            <p>Fill the evaluation class form with no payments required.</p>
                             <img src="images/shadow-bottom.png" class="shadow-bottom" alt="" >
                         </div>
                         <div class="box-en" >
                             <img src="images/tow-back.png" alt="">
-                            <h4 class="title yellow">Lorem ipsum </h4>
+                            <h4 class="title yellow">Download </h4>
                             <p>Download Zoom and get your class. </p>
                             <img src="images/shadow-bottom.png" class="shadow-bottom" alt="" >
                         
                         </div>
                         <div class="box-en" >
                             <img src="images/three-back.png" alt="">
-                            <h4 class="title">Lorem ipsum </h4>
-                            <p>Set the proper plan curriculum with the mentor.<br>Start your classes. </p>
+                            <h4 class="title">Plan </h4>
+                            <p>Set the proper plan curriculum with the mentor. </p>
                             <img src="images/shadow-bottom.png" class="shadow-bottom" alt="" >
                         </div>
+                        <div class="box-en" >
+                            <img src="images/four-back.png" alt="">
+                            <h4 class="title">Start </h4>
+                            <p>Start your classes. </p>
+                            <img src="images/shadow-bottom.png" class="shadow-bottom" alt="" >
+                        </div> -->
+                        <img src="images/how-to-start/image-one.png" class="" alt="" >
+                        <img src="images/how-to-start/image-2.png" class="" alt="" >
+                        <img src="images/how-to-start/image-3.png" class="" alt="" >
+                        <img src="images/how-to-start/image-4.png" class="" alt="" >
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="exp">
+        <div class="overlay"></div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -374,7 +401,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="title-lim">now, for a limited time, your first class is free <a href="#" class="btn btn-joinus btn-signup">signup now</a></p>
+                    <!-- <p class="title-lim">now, for a limited time, your first class is free <a href="#" class="btn btn-joinus btn-signup">signup now</a></p> -->
                     <div class="timer-container">
                         <div>
                             <button id="half" class="content" onclick="showClass('one')" >30 mins</button>
@@ -388,7 +415,7 @@
                     </div>
                     <div class="cards-parallelogram">
                         <div class="background-parallelogram one content hidden">
-                        <div class="basic"></div>
+                            <div class="basic"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                     <div class="header-content">
@@ -410,10 +437,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         
                         <div class="background-parallelogram one content hidden ">
-                        <div class="standard"></div>
+                            <div class="standard"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                 <div class="instead"></div>
@@ -438,9 +466,10 @@
                                     
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram one content hidden ">
-                         <div class="premium"></div>
+                            <div class="premium"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                 <div class="instead"></div>
@@ -465,6 +494,7 @@
                                     
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram tow content hidden">
                         <div class="basic"></div>
@@ -493,10 +523,12 @@
                                 
                                 </div>
                             </div>
+
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         
                         <div class="background-parallelogram tow content hidden ">
-                        <div class="standard"></div>
+                            <div class="standard"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                 <div class="instead2"></div>
@@ -520,6 +552,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram tow content hidden">
                             <div class="premium"></div>
@@ -547,6 +580,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram three content hidden">
                         <div class="basic"></div>
@@ -573,9 +607,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram three content hidden">
-                        <div class="standard"></div>
+                            <div class="standard"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                 <div class="instead2"></div>
@@ -601,9 +636,10 @@
                                     
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                         <div class="background-parallelogram three content hidden">
-                        <div class="premium"></div>
+                            <div class="premium"></div>
                             <div class="parallelogram">
                                 <div class="content">
                                 <div class="instead2"></div>
@@ -629,6 +665,7 @@
                                     
                                 </div>
                             </div>
+                            <a href="" class=" btn btn-select"><span>Select</span> </a>
                         </div>
                     </div>
                 </div>
@@ -914,7 +951,12 @@
                     <div class="item d-flex align-item-center">
                         <img src="images/girl-test.png" alt="" >
                         <div class="content">
-                            <p>Thanks, my daughter is finally love the class.Thanks for teacher Duaa she is doing lots of efforts with her.</p>
+                            <p>
+                                Assalamualikum. <br>
+                                Just wanted to inform you that Yazan is extremely happy with his classes and he made some improvements.
+                                He looks forward to them every day hamduliallah.
+
+                            </p>
                         </div>
                     </div>
                     <div class="item d-flex align-item-center right-yellow">
